@@ -19,12 +19,11 @@ dependencies:
   - pandas
   - scikit-learn
   - pytest
-  - mp-api
+  - mp_api
   - pandas
-  - ipywidgets
   - pip:
     - python-dotenv
     - mkdocs
     - versioningit
     - build
-    # - -e .
+    - -e .
