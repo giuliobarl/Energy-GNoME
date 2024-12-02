@@ -344,3 +344,29 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+
+# mypy
+.mypy_cache/
+
+# profraw files from LLVM? Unclear exactly what triggers this
+# There are reports this comes from LLVM profiling, but also Xcode 9.
+*profraw
+
+# In-tree generated files
+*/_version.py
+*temp*.ipynb
+test*.ipynb
+test.yaml
+test.gro
+test_file.xyz
+build_wheel
+energy_gnome/config.yaml
+.temp*
+_temp*
+
+
+# Database
+data/raw/cathodes/*/*/charge
+data/raw/cathodes/*/*/discharge
+data/raw/cathodes/*
